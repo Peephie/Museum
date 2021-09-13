@@ -1,0 +1,15 @@
+.title {
+  font-weight: bold;
+  line-height: 100%;
+  text-align: left;
+  font-size: 48px;
+  
+  &--subscription {
+    text-align: center;
+  }
+  
+  @include onMobile {
+    font-size: 36px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,47 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+
+  min-height: 300px;
+  box-sizing: border-box;
+
+  @include onTablet {
+    min-height: min-content;
+  }
+
+  @include onDesktop {
+    min-height: min-content;
+  }
+  
+  &__menu-opener {
+    height: 24px;
+    width: 24px;
+
+    background-image: url(../images/baseline-menu.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &__logo {
+    width: 68px;
+    height: 72px;
+
+    background-image: url(../images/logo.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @include onMobile {
+      width: 55px;
+      height: 61px;
+    }
+  }
+
+  &__invisible {
+    height: 1px;
+    width: 1px;
+    display: block;
+    color: transparent;
+  }
+}

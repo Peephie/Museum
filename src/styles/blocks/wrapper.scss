@@ -1,0 +1,16 @@
+.wrapper {
+  margin: 0 auto;
+  max-width: 280px;
+
+  @include onSmallDesktop {
+    max-width: 1170px;
+  }
+
+  @include onWideDesktop {
+    max-width: 1570px;
+  }
+
+  @include onTablet {
+    max-width: 700px;
+  }
+}

@@ -1,0 +1,41 @@
+.page {
+  width: 100vw;
+  font-family: "Montserrat", sans-serif;
+
+  &__body {
+    width: 100%;
+    background: $c-gray;
+    margin: 0;
+    padding: 0;
+
+    overflow-x: hidden;
+  }
+
+  &__header {
+    margin-bottom: 70px;
+
+    @include onTablet {
+      margin-bottom: 90px;
+    }
+
+    @include onDesktop {
+      margin-bottom: 200px;
+    }
+  }
+
+  &__gallery {
+    margin-bottom: 100px;
+
+    @include onTablet {
+      margin-bottom: 90px;
+    }
+
+    @include onDesktop {
+      margin-bottom: 200px;
+    }
+  }
+
+  &__subscription {
+    margin-bottom: 50px;
+  }
+}

@@ -1,0 +1,147 @@
+.subscription {
+  height: min-content;
+  width: 100vw;
+  color: #fff;
+
+  background-image: url(../images/subscription.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &__titles {
+    display: flex;
+    flex-direction: column;
+
+    @include onMobile {
+      grid-column: 1 / -1;
+    }
+    
+    @include onTablet {
+      grid-column: 2 / 6;
+    }
+
+    @include onSmallDesktop {
+      grid-column: 1 / 13;
+      align-self: center;
+    }
+
+    @include onWideDesktop {
+      grid-column: 1 / 17;
+      text-align: center;
+    }
+  }
+
+  &__title {
+    margin: 0 0 30px;
+    padding-top: 55px;
+    text-align: center;
+
+    @include onTablet {
+      margin-bottom: 20px;
+      padding-top: 64px;
+    }
+
+    @include onDesktop {
+      margin-bottom: 20px;
+      padding-top: 175px;
+    }
+  }
+
+  &__subtitle {
+    margin: 0 0 48px;
+
+    font-family: IBM Plex Sans, sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+
+    @include onTablet {
+      margin-bottom: 64px;
+      width: max-content;
+    }
+  }
+
+  &__form {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0 auto;
+    padding-bottom: 113px;
+
+    @include onMobile {
+      // grid-column: 1 / 2;
+
+      justify-content: center;
+    }
+
+    @include onTablet {
+      grid-column: 2 / 6;
+      
+      padding-bottom: 94px;
+      width: 100%;
+    }
+
+    @include onDesktop {
+      grid-column: 4 / 10;
+      width: 100%;
+    }
+
+    @include onSmallDesktop {
+      padding-bottom: 188px;
+    }
+
+    @include onWideDesktop {
+      grid-column: 6 / 12;
+      padding-bottom: 255px;
+    }
+  }
+  
+  &__email {
+    height: 70px;
+    padding: 0;
+    border: none;
+    
+    &::placeholder {
+      font-family: Montserrat, sans-serif;
+      padding: 18px 31px;
+    }
+    
+    @include onMobile {
+      height: 50px;
+    }
+    
+    @include onTablet {
+      width: 380px;
+    }
+
+    @include onDesktop {
+      width: 470px;
+    }
+  }
+  
+  
+  &__submit {
+    height: 70px;
+    width: 70px;
+    
+    background-color: #f14a27;
+    color: #000;
+    
+    background-image: url(../images/arrow_right--black.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    
+    border: none;
+    
+    @include onMobile {
+      width: 50px;
+      height: 50px;
+    }
+
+    @include onDesktop {
+      grid-column: 9 / 10;
+    }
+  }
+}

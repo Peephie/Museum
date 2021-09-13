@@ -1,0 +1,41 @@
+.events {
+  height: min-content;
+
+  &__title {
+    margin: 0 0 40px;
+    text-align: center;
+
+    @include onTablet {
+      margin-bottom: 50px;
+    }
+
+    @include onDesktop {
+      margin-bottom: 60px;
+    }
+  }
+  
+  &__event {
+    height: fit-content;
+    margin-bottom: 60px;
+    
+    @include onTablet {
+      margin-bottom: 50px;
+    }
+    
+    @include onDesktop {
+      margin-bottom: 100px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+
+      @include onTablet {
+        margin-bottom: -30px;
+      }
+
+      @include onDesktop {
+        margin-bottom: 100px;
+      }
+    }
+  }
+}

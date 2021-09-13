@@ -1,0 +1,63 @@
+.grid {
+  display: grid;
+  
+  @include onSmallDesktop {
+    grid-template-columns: repeat(12, 70px);
+    grid-column-gap: 30px;
+  }
+
+  @include onWideDesktop {
+    grid-template-columns: repeat(16, 70px);
+    grid-column-gap: 30px;
+  }
+
+  @include onTablet {
+    grid-template-columns: repeat(6, 100px);
+    grid-column-gap: 20px;
+  }
+
+  @include onMobile {
+    grid-template-columns: repeat(2, 130px);
+    grid-column-gap: 20px;
+  }
+
+  &--min-width--desktop {
+    display: block;
+
+    @include onSmallDesktop {
+      display: grid;
+      grid-template-columns: repeat(12, 70px);
+      grid-column-gap: 30px;
+    }
+
+    @include onWideDesktop {
+      display: grid;
+      grid-template-columns: repeat(16, 70px);
+      grid-column-gap: 30px;
+    }
+  }
+
+  &--min-width--tablet {
+    @include onMobile {
+      display: block;
+    }
+
+    @include onTablet {
+      display: grid;
+      grid-template-columns: repeat(6, 100px);
+      grid-column-gap: 20px;
+    }
+
+    @include onSmallDesktop {
+      display: grid;
+      grid-template-columns: repeat(12, 70px);
+      grid-column-gap: 30px;
+    }
+
+    @include onWideDesktop {
+      display: grid;
+      grid-template-columns: repeat(16, 70px);
+      grid-column-gap: 30px;
+    }
+  }
+}
