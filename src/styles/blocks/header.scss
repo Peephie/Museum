@@ -29,7 +29,6 @@
     }
 
     @include onDesktop {
-  
       min-height: 655px;
       max-height: 655px;
     }
@@ -197,7 +196,6 @@
   }
 
   &__events-link {
-
     display: none;
     align-self: flex-start;
     justify-self: start;
@@ -206,9 +204,10 @@
     bottom: 20px;
     
     width: max-content;
-    transform: rotate(270deg);
-
+    text-decoration: none;
     color: #687480;
+
+    transform: rotate(270deg);
 
     &::before {
       content: "";

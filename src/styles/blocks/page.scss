@@ -2,6 +2,8 @@
   width: 100vw;
   font-family: "Montserrat", sans-serif;
 
+  scroll-behavior: smooth;
+
   &__body {
     width: 100%;
     background: $c-gray;

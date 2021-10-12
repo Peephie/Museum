@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NAMU</title>
+    <link rel="shortcut icon" href="./images/logo.svggit ">
     <link rel="stylesheet" href="./styles/main.scss">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
@@ -19,7 +20,7 @@
   </head>
 
   <body class="page__body">
-    <header class="header page__header ">
+    <header class="header page__header" id="header">
       <div class="header__background grid grid--min-width--tablet wrapper wrapper--desktop">
         <img
           src="/images/header-image.png"
@@ -30,8 +31,8 @@
 
       <div class="header__nav-wrapper wrapper">
         <nav class="header__nav nav">
-          <a href="" class="nav__menu-opener"></a>
-          <a href="" class="nav__logo"></a>
+          <a href="/" class="nav__menu-opener"></a>
+          <a href="/" class="nav__logo"></a>
           <div class="nav__invisible"></div>
         </nav>
       </div>
@@ -49,12 +50,12 @@
             <a href="/" class="header__tickets-icon"></a>
           </div>
 
-          <a class="header__events-link">події</a>
+          <a href="#events" class="header__events-link">події</a>
         </div>
       </div>
     </header>
 
-    <section class="events page__events">
+    <section class="events page__events" id="events">
       <div class="wrapper events__wrapper">
         <h2 class="events__title title">
           Актуальні
@@ -123,7 +124,7 @@
       </div>
     </section>
 
-    <section class="gallery page__gallery">
+    <section class="gallery page__gallery" id="gallery">
       <div class="wrapper">
         <h2 class="gallery__title title">Галерея</h2>
         <div class="gallery__photo-container">
@@ -195,27 +196,15 @@
       </div>
     </section>
 
-    <footer class="footer page__footer">
+    <footer class="footer page__footer" id="footer">
       <div class="footer__wrapper wrapper grid">
         <div class="footer__links">
-          <img
-            src="./images/logo.svg"
-            alt="Logo"
-            class="footer__logo"
-          >
+          <a href="#header" class="footer__logo"></a>
 
           <div class="footer__media">
-            <img
-              src="./images/facebook-letter-logo.png"
-              alt="Facebook"
-              class="footer__facebook"
-            >
+            <a href="https://www.facebook.com/namu.museum/" class="footer__facebook"></a>
 
-            <img
-              src="./images/instagram.png"
-              alt="Instagram"
-              class="footer__instagram"
-            >
+            <a href="https://www.instagram.com/namu.museum/" class="footer__instagram"></a>
           </div>
         </div>
 
@@ -241,26 +230,29 @@
           <h2 class="footer__contacts-title">Контакти</h2>
 
           <p class="footer__contacts">
-            вул. М. Грушевського, 6; Київ, 01001; <br>
-            тел. +38 (044) 278-13-57 <br>
-            факс +38 (044) 278-74-54 <br>
-            e-mail: info@namu.kiev.ua
+            <a href="https://goo.gl/maps/fgW2qsrvo627jZkb8"
+              class="footer__contacts-link">
+              вул. М. Грушевського, 6; Київ, 01001;
+            </a> <br>
+            <a href="tel:+38 (044) 278-13-57" class="footer__contacts-link">тел. +38 (044) 278-13-57</a> <br>
+            <a href="fax:+38 (044) 278-74-54" class="footer__contacts-link">факс +38 (044) 278-74-54</a> <br>
+            <a href="mailto:info@namu.kiev.ua" class="footer__contacts-link">e-mail: info@namu.kiev.ua</a>
           </p>
         </div>
 
-        <div class="footer__arrow-container">
+        <a href="#header" class="footer__arrow-container">
           <img
             src="./images/Arrow up.png"
             alt="Arrow Up"
             class="footer__arrow"
           >
-        </div>
+        </a>
 
         <div class="footer__line"></div>
 
         <div class="footer__nav-container footer__nav-container--1">
-          <a href="/" class="footer__nav-link">Галерея</a>
-          <a href="/" class="footer__nav-link">Виставки та події</a>
+          <a href="#gallery" class="footer__nav-link">Галерея</a>
+          <a href="#events" class="footer__nav-link">Виставки та події</a>
           <a href="/" class="footer__nav-link">Відвідування</a>
           <a href="/" class="footer__nav-link">Стати нашим другом</a>
         </div>
@@ -269,7 +261,7 @@
           <a href="/" class="footer__nav-link">Про нас</a>
           <a href="/" class="footer__nav-link">Магазин</a>
           <a href="/" class="footer__nav-link">Блог</a>
-          <a href="/" class="footer__nav-link">Контакти</a>
+          <a href="#footer" class="footer__nav-link">Контакти</a>
         </div>
 
         <div class="footer__copyright-container">
